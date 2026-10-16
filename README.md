@@ -37,7 +37,7 @@ Output: ['Architec','Plumber','Programmer','Welder']
 ### Array: push
 ```
 const vehicle = ['bike','car','helicopter'];
-const pushPlane = vehicle.push("plane");
+const pushPlane = vehicle.push('plane');
 console.log(vehicle);
 ```
 Output: ['bike','car','helicopter','plane']
