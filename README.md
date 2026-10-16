@@ -11,12 +11,12 @@ Output: 5
 
 ### Array: concat
 ```
-const provinsi1 = ['Java Barat', 'Jawa Tengah', 'Jawa Timur'];
+const provinsi1 = ['Jawa Barat', 'Jawa Tengah', 'Jawa Timur'];
 const provinsi2 = ['Kalimantan Barat', 'Kalimantan Tengah', 'Kalimantan Timur'];
 const provinsi3 = provinsi1.concat(provinsi2);
-console.log(provinsi3)
+console.log(provinsi3);
 ```
-Output: ['Java Barat','Jawa Tengah','Jawa Timur','Kalimantan Barat','Kalimantan Tengah','Kalimantan Timur']
+Output: ['Jawa Barat','Jawa Tengah','Jawa Timur','Kalimantan Barat','Kalimantan Tengah','Kalimantan Timur']
 
 ### Array: filter
 ```
@@ -28,37 +28,142 @@ Output: ['Venus','Earth','Mars']
 
 ### Array: sort
 ```
-const profession = ['Plumber', 'Architec', 'Programmer', 'Welder'];
+const profession = ['Plumber', 'Architect', 'Programmer', 'Welder'];
 profession.sort();
 console.log(profession);
 ```
-Output: ['Architec','Plumber','Programmer','Welder']
+Output: ['Architect','Plumber','Programmer','Welder']
 
 ### Array: push
 ```
-const vehicle = ['bike','car','helicopter'];
+const vehicle = ['bike', 'car', 'helicopter'];
 const pushPlane = vehicle.push('plane');
 console.log(vehicle);
 ```
 Output: ['bike','car','helicopter','plane']
 
+### String: toUpperCase
+```
+const name = 'aldi dwi ardyansah';
+console.log(name.toUpperCase());
+```
+Output: 'ALDI DWI ARDYANSAH'
+
+### String: toLowerCase
+```
+const greeting = 'HELLO WORLD';
+console.log(greeting.toLowerCase());
+```
+Output: 'hello world'
+
+### String: slice
+```
+const language = 'JavaScript';
+console.log(language.slice(0, 4));
+```
+Output: 'Java'
+
+### String: includes
+```
+const sentence = 'I am learning JavaScript';
+console.log(sentence.includes('JavaScript'));
+```
+Output: true
+
+### String: replace
+```
+const message = 'Hello World';
+console.log(message.replace('World', 'JavaScript'));
+```
+Output: 'Hello JavaScript'
+
+### Number: toFixed
+```
+const price = 150.567;
+console.log(price.toFixed(2));
+```
+Output: '150.57'
+
+### Number: toString
+```
+const age = 25;
+console.log(age.toString());
+```
+Output: '25'
+
+### Number: toPrecision
+```
+const value = 123.456;
+console.log(value.toPrecision(4));
+```
+Output: '123.5'
+
+### Number: isInteger
+```
+console.log(Number.isInteger(10));
+```
+Output: true
+
+### Number: isFinite
+```
+console.log(Number.isFinite(100));
+```
+Output: true
+
+### Object: keys
+```
+const person = { name: 'Aldi', age: 30, profession: 'Teacher' };
+console.log(Object.keys(person));
+```
+Output: ['name','age','profession']
+
+### Object: values
+```
+const student = { name: 'Budi', age: 20 };
+console.log(Object.values(student));
+```
+Output: ['Budi',20]
+
+### Object: entries
+```
+const car = { brand: 'Toyota', year: 2024 };
+console.log(Object.entries(car));
+```
+Output: [['brand','Toyota'],['year',2024]]
+
+### Object: assign
+```
+const original = { color: 'red' };
+const additional = { size: 'large' };
+const combined = Object.assign({}, original, additional);
+console.log(combined);
+```
+Output: { color: 'red', size: 'large' }
+
+### Object: freeze
+```
+const settings = Object.freeze({ mode: 'dark' });
+console.log(settings);
+```
+Output: { mode: 'dark' }
+
 ## Mencari 5 built-in function
 
 ### parseInt()
 ```
-parseInt("42.58"); 
-parseInt("10px");
+console.log(parseInt("42.58"));
+console.log(parseInt("10px"));
 ```
-Mengembalikan nilai integer 42
-Mengembalikan nilai integer 10
+Output: 42
+Output: 10
 
 ### parseFloat()
 ```
-parseFloat("300.5 km/h");
-parseFloat("120.75 m");
+console.log(parseFloat("300.5 km/h"));
+console.log(parseFloat("120.75 m"));
 ```
-Mengembalikan nilai float 300.5
-Mengembalikan nilai float 120.75
+Output: 300.5
+Output: 120.75
 
 ### setTimeout()
 ```
@@ -66,7 +171,7 @@ setTimeout(() => {
     console.log('Hello World!');
 }, 5000);
 ```
-Tulisan 'Hello World!' akan muncul dalam 5 detik
+Tulisan 'Hello World!' akan muncul setelah sekitar 5 detik
 
 ### setInterval()
 ```
@@ -74,10 +179,10 @@ setInterval(() => {
     console.log('Console log ini akan muncul setiap 3 detik');
 }, 3000);
 ```
-Console log ini akan muncul setiap 3 detik
+Console log ini akan muncul berulang setiap sekitar 3 detik
 
 ### eval()
 ```
-eval('2 + 2');
+console.log(eval('2 + 2'));
 ```
-Mengembalikan nilai integer 4
+Output: 4
