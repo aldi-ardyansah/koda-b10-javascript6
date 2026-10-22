@@ -1,6 +1,6 @@
 # JavaScript 6
 
-## Mencari 20 built-in method
+## Mencari 20 Built-in Method
 
 ### Array: length
 ```javascript
@@ -36,9 +36,9 @@ Output: ['Architect','Plumber','Programmer','Welder']
 
 ### Array: push
 ```javascript
-const vehicle = ['bike', 'car', 'helicopter'];
-const pushPlane = vehicle.push('plane');
-console.log(vehicle);
+const vehicle = ["bike", "car", "helicopter"];
+const pushPlane = vehicle.push("plane");
+console.log(pushPlane(vehicle));
 ```
 Output: ['bike','car','helicopter','plane']
 
@@ -147,7 +147,7 @@ console.log(settings);
 ```
 Output: { mode: 'dark' }
 
-## Mencari 5 built-in function
+## Mencari 5 Built-in Function
 
 ### parseInt()
 ```javascript

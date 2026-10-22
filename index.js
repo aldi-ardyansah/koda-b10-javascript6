@@ -1,59 +1,58 @@
-
 // Mencari 20 built-in method
 
     // Array: length
-    const carBrand = ['Toyota', 'Daihatsu', 'Suzuki', 'Ford', 'Mazda'];
+    const carBrand = ["Toyota", "Daihatsu", "Suzuki", "Ford", "Mazda"];
     console.log(carBrand.length);
     // Output: 5
 
     // Array: concat
-    const provinsi1 = ['Jawa Barat', 'Jawa Tengah', 'Jawa Timur'];
-    const provinsi2 = ['Kalimantan Barat', 'Kalimantan Tengah', 'Kalimantan Timur'];
+    const provinsi1 = ["Jawa Barat", "Jawa Tengah", "Jawa Timur"];
+    const provinsi2 = ["Kalimantan Barat", "Kalimantan Tengah", "Kalimantan Timur"];
     const provinsi3 = provinsi1.concat(provinsi2);
     console.log(provinsi3);
     // Output: ['Jawa Barat','Jawa Tengah','Jawa Timur','Kalimantan Barat','Kalimantan Tengah','Kalimantan Timur']
 
     // Array: filter
-    const planet = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+    const planet = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
     const letterLessThan6 = planet.filter((word) => word.length < 6);
     console.log(letterLessThan6);
     // Output: ['Venus','Earth','Mars']
 
     // Array: sort
-    const profession = ['Plumber', 'Architect', 'Programmer', 'Welder'];
+    const profession = ["Plumber", "Architect", "Programmer", "Welder"];
     profession.sort();
     console.log(profession);
     // Output: ['Architect','Plumber','Programmer','Welder']
 
     // Array: push
-    const vehicle = ['bike', 'car', 'helicopter'];
-    const pushPlane = vehicle.push('plane');
-    console.log(vehicle);
+    const vehicle = ["bike", "car", "helicopter"];
+    const pushPlane = vehicle.push("plane");
+    console.log(pushPlane.vehicle);
     // Output: ['bike','car','helicopter','plane']
 
     // String: toUpperCase
-    const name = 'aldi dwi ardyansah';
+    const name = "aldi dwi ardyansah";
     console.log(name.toUpperCase());
     // Output: 'ALDI DWI ARDYANSAH'
 
     // String: toLowerCase
-    const greeting = 'HELLO WORLD';
+    const greeting = "HELLO WORLD";
     console.log(greeting.toLowerCase());
     // Output: 'hello world'
 
     // String: slice
-    const language = 'JavaScript';
+    const language = "JavaScript";
     console.log(language.slice(0, 4));
     // Output: 'Java'
 
     // String: includes
-    const sentence = 'I am learning JavaScript';
-    console.log(sentence.includes('JavaScript'));
+    const sentence = "I am learning JavaScript";
+    console.log(sentence.includes("JavaScript"));
     // Output: true
 
     // String: replace
-    const message = 'Hello World';
-    console.log(message.replace('World', 'JavaScript'));
+    const message = "Hello World";
+    console.log(message.replace("World", "JavaScript"));
     // Output: 'Hello JavaScript'
 
     // Number: toFixed
@@ -80,29 +79,29 @@
     // Output: true
 
     // Object: keys
-    const person = { name: 'Aldi', age: 30, profession: 'Teacher' };
+    const person = { name: "Aldi", age: 30, profession: "Teacher" };
     console.log(Object.keys(person));
     // Output: ['name','age','profession']
 
     // Object: values
-    const student = { name: 'Budi', age: 20 };
+    const student = { name: "Budi", age: 20 };
     console.log(Object.values(student));
     // Output: ['Budi',20]
 
     // Object: entries
-    const car = { brand: 'Toyota', year: 2024 };
+    const car = { brand: "Toyota", year: 2024 };
     console.log(Object.entries(car));
     // Output: [['brand','Toyota'],['year',2024]]
 
     // Object: assign
-    const original = { color: 'red' };
-    const additional = { size: 'large' };
+    const original = { color: "red" };
+    const additional = { size: "large" };
     const combined = Object.assign({}, original, additional);
     console.log(combined);
     // Output: { color: 'red', size: 'large' }
 
     // Object: freeze
-    const settings = Object.freeze({ mode: 'dark' });
+    const settings = Object.freeze({ mode: "dark" });
     console.log(settings);
     // Output: { mode: 'dark' }
 
@@ -122,16 +121,16 @@
 
     // setTimeout()
     setTimeout(() => {
-        console.log('Hello World!');
+        console.log("Hello World!");
     }, 5000);
     // Tulisan 'Hello World!' akan muncul setelah sekitar 5 detik
 
     // setInterval()
     setInterval(() => {
-        console.log('Console log ini akan muncul setiap 3 detik');
+        console.log("Console log ini akan muncul setiap 3 detik");
     }, 3000);
     // Console log ini akan muncul berulang setiap sekitar 3 detik
 
     // eval()
-    console.log(eval('2 + 2'));
+    console.log(eval("2 + 2"));
     // Output: 4
